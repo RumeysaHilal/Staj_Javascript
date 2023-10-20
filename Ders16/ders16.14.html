@@ -1,0 +1,47 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .bir{
+            color: brown;
+        }
+        .iki{
+            background-color: aquamarine;
+        }
+        .uc{
+            width: 300px;
+            height: 25px;
+            padding-top: 10px;
+            text-align: center;
+            border: 1px dotted blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="bir()"> Odaklan </button>
+    <br/><br/>
+    <div id = "alan" class="bir iki uc"> javascript eğitim seti </div>
+    <br/><br/>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // classList() : atanmış olan class listesini elde etmek veya ayarlamak için kullanılır. 
+        /*
+        item : sınıf seçicisinin adını döndürür
+        length : sınıf seçici sayısını döndürür
+        add :  sınıf seçicisi ekler
+        remove :  seçici siler
+        toggle: seçici ekler veya kaldırır
+        contains: sınıf seçicisi arar 
+        */
+        function bir(){ //hem oluşturuyor hem siliyor
+            var deger = document.getElementById("alan").classList.contains("bir");
+            document.getElementById("sonuc").innerHTML = deger;
+            
+        }
+    </script>
+</body>
+</html>

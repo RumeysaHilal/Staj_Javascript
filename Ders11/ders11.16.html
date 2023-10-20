@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>  
+    
+    javascript eğitim seti<br/>
+    <button onclick="islem()">çalıştır</button>
+    <div id="sonucumuz">........</div>
+
+    <script type="text/javascript" language="javascript">
+        // body : belge içerisindeki body tagının referansını elde etmek için kullanılır.
+
+        function islem(){
+            var islem  = document.body.innerHTML;
+            document.getElementById("sonucumuz").innerHTML = islem;
+        }
+        
+        
+    </script>
+</body>
+</html>

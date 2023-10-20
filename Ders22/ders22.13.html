@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <form action="#" method="get" onsubmit="ornek()" onreset="ornek2()">
+        isim soyisim : <input type="text"> <br/><br/>
+        email: <input type="email"> <br/><br/>
+        <input type="submit" value="Gönder">
+        <input type="reset">
+    </form>
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // onreset : belge içindeki form sıfırlanmak istenirse belirtielecek olan fonk çalışır.
+
+        function ornek() {
+            alert("form gönderilmek üzere");
+        }
+        function ornek2() {
+            alert("form temizlendi.");
+        }
+    </script>
+</body>
+</html>

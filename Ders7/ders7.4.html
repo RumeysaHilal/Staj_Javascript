@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // global : g düzenli ifadesinin kullanılıp kullanılmadığı kontrol eder.
+
+        var metin = "javascript egitim seti";
+        var ifade = new RegExp("i","g");
+        var sonuc = metin.match(ifade);
+        var kontrol = ifade.global;
+
+        document.write(sonuc + "<br/>" + kontrol);
+        
+    </script>
+</body>
+</html>

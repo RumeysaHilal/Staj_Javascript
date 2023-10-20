@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body onpageshow="ornek()" onpagehide="ornek2()">
+    <div id="sonuc"></div>
+    <div id="sonuc2"></div>
+
+    <script type="text/javascript" language="javascript">
+        // onpageshow : sayfa kullanıcı tarafından görüntülenebiliyorsa belirtilecek olan fonk çalışır : 
+        // onpagehide : sayfa görüntülenemiyorsa 
+
+        function ornek(){
+            document.getElementById("sonuc").innerHTML = "sayfaya hoşgeldiniz";
+        }
+
+        function ornek2(){
+            document.getElementById("sonuc2").innerHTML = "sayfa görüntülenemiyor";
+        }
+
+    </script>
+</body>
+</html>

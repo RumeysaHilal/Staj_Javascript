@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // isPrototypeOf() : bir constructor yapıcı metodu bulunup bulunmadığını kotnrol eder.
+
+        function bilgi () {
+            isim = "java";
+        }
+
+        var sonuc = {}; // burada constructor için fonksiyon tanımlayamayız
+
+        var kontrolEt = bilgi.prototype.isPrototypeOf(sonuc);
+        document.write(kontrolEt);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .bir{
+            width: 800px;
+            height: 600px;
+            overflow: auto;
+            background-color: rgb(0, 42, 255);
+        }
+        .iki{
+            width: 2000px;
+            height: 2000px;
+            border: 5px solid black;
+            padding: 20px;
+            margin: 20px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kapsayici" class="bir" onscroll="ornek()">
+        <div id="alan" class="iki"></div>
+    </div>
+    <br/><br/><br/>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // scrollLeft  : html elemanının yatay kaydırılma genişliği pixel değerini elde etmek için kullanılır. 
+        // scrollRight : html elemanın dikey kaydırılma pixel genişliğini elde etemk için kullanılır    
+        
+        function ornek(){
+            var degerbir = document.getElementById("kapsayici").scrollLeft;
+            var degeriki = document.getElementById("kapsayici").scrollTop;
+            document.getElementById("sonucalani").innerHTML = "genişlik : " + degerbir + "px" + "</br> yükseklik : " + degeriki + "px" ;
+        }
+
+    </script>
+</body>
+</html>

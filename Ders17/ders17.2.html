@@ -1,0 +1,50 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .ornek{
+            font-weight: bol;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <button onclick="deneme()"> Tıklayınız </button>
+    <div id="bir"> javascript <span class="ornek"> eğitim seti</span></div> <!-- açıklama alanı -->
+    <br /> <br>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // nodeType : belge içindeki herhangi bir nodeun türünü elde etmek için kullanılır 
+        /*
+        1 elemnt_node
+        2 attribute_node
+        3 text_node
+        4 cdata_section_node
+        5 entity_reference_node
+        6 entity_node
+        7 processing_instruction_node
+        8 comment_node
+        9 document_node
+        10 document_type_node
+        11 document_fragment_node
+        12 notation_node
+        
+        */
+
+        function deneme() {
+            var islem = document.body.childNodes;
+            var metin = "";
+            for (var i = 0; i < islem.length; i++){
+                metin = metin + islem[i].nodeType + "<br/>";
+            }
+            document.getElementById("sonuc").innerHTML = metin;
+        }
+
+
+    </script>
+</body>
+</html>

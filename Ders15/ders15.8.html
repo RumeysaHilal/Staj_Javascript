@@ -1,0 +1,30 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    
+</head>
+
+<body>
+    <div id="birinciid" name="birisim" style="border: 1px solid red; margin: 5px; padding: 5px;" class="sinif"> javascript eğitim seti</div>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // value : belge içindeki özellik değeri referansına ulaşmak için kullanılır.
+
+        var deger = document.getElementById("birinciid").attributes;
+        var adet = deger.length;
+        var metin = "";
+        var i = 0;
+        while(i < adet){
+            var sonuc = deger[i].value;
+            metin += sonuc + " &&&& ";
+            document.getElementById("sonucalani").innerHTML = metin;
+            i++;
+        }
+
+
+    </script>
+</body>
+</html>

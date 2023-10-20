@@ -1,0 +1,33 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="jsdugumu">javascript</div>
+    <div id="phpdugumu">php</div>
+    <div id="pythondugumu">python</div>
+    <div id="csdugumu">css</div>
+    <br /><br />
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // compareDocumentPosition() : belge içindeki nodeların birbirlerine göre konum değerlerini elde etmek için kullanılır. 
+        /* 
+        2 : ilk düğüm ikinci düğümden sonra
+        4 : ilk düğüm ikinci düğümden önce
+        */
+       var ilkdugum = document.getElementById("phpdugumu");
+       var ikincidugum = document.getElementById("jsdugumu");
+       var islem= ilkdugum.compareDocumentPosition(ikincidugum); 
+       if(islem == 2 ){
+           document.getElementById("sonuc").innerHTML = "İlk düğüm ikinci düğümden sonra";
+       }else{
+           document.getElementById("sonuc").innerHTML = "İlk düğüm ikinci düğümden önce";
+       }
+
+    </script>
+</body>
+</html>

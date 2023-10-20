@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <video onloadstart="ornek()" controls>
+        <source  src="video.mp4" type="video/mp4">
+    </video>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // onprogress : browser tarafından medya verisini indirirken belirtilecek olan fonksiyon çalışır 
+        // onloadeddata : medya elemanı verisi yüklendiğinde belirtilecek olan fonksiyon çalışır
+        // oncanplaythrough : medya elemanı tamamiyle arabelleğe yüklendiğinde ve yürütülmeye hazır olduğunda çalıştırılacak olan fonksiyonu çalıştırır.
+        // onwaiting : medya elemanının yürütülmesi için duraklatıldığında veya devam etmesi için bekletildiğinde kullanılır. 
+        // onplaying : medya eleamnı yürütüleye başlandığında ve yürütme işlmei rabelleğe yükleme gibi işlmeler için durup başlayınca kullanılacak olan fonksiyon çalıştırılır
+        // onsuspend : tarayıcı medya içeriğini bilerek indirmediğinde belirtilecek olan fonksiyon çalışır
+        // onerror : sayfanın medya elemanı verisinin yüklenmesi browser tarafından durdurulduğunda veya hata oluştuğunda belirtielecek olan ofiste kullanılır 
+        // onemtied : medya eleamnı kullanılmaz duruma geldiğinde , bağlantı kesildiğine mesela belirtilen fonk çalışır 
+        // onstalled : indirmeye çalışılırken medya verisi alınamıyorsa
+
+        function ornek() {
+            document.getElementById("sonuc").innerHTML = "medya yüklendi";
+        }
+    </script>
+</body>
+</html>

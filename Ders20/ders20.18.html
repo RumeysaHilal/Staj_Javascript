@@ -1,0 +1,24 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <input id = "metinalani" onkeypress="ornek()">
+    <div id="sonucalani"></div>
+    <div id="basimalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // key : belgede onkeypress onkeydown veya onkeyup eventi gerçekleştiğinde klavyeden basılan tuşun değeri geriye döndürür. 
+        
+        function ornek(){
+            var basilantus = event.key;
+            document.getElementById("sonucalani").innerHTML +=basilantus;
+            document.getElementById("basimalani").innerHTML =basilantus;            
+        }
+
+    </script>
+</body>
+</html>

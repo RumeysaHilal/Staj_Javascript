@@ -1,0 +1,24 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="deneme()"> Tıklayınız </button>
+    <span id="kimlik"> eğitim seti <!--setlerrr --></span><br /><br />
+    <!-- <p id="deneme"> javascript eğitim seti </p><br /> -->
+    <div id="sonuc"></div>
+    <br />
+
+    <script type="text/javascript" language="javascript">
+        // nodeValue : belge içindeki herhangi bir node un değerini elde etmek için kullanılır.
+
+        function deneme(){
+        var islemyap = document.getElementById("kimlik").childNodes[1].nodeValue;
+        document.getElementById("sonuc").innerHTML = islemyap;
+        }
+    </script>
+</body>
+</html>

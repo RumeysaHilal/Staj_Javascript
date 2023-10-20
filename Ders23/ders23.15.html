@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> Tıklayınız</button> <br/> <br/>
+    <div id="metin"> Javascript Eğitim Seti </div>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // btoa() : metnin tüm karakterlerini base 64 kodlamasına çevirir 
+
+        function ornek(){
+            var veri = document.getElementById("metin").innerHTML;
+            var donusum = window.btoa(encodeURIComponent(veri));
+            document.getElementById("sonuc").innerHTML = donusum;
+        }
+   </script>
+    
+</body>
+</html>

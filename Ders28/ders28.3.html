@@ -1,0 +1,45 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Javascript Eğitim</title>
+    
+</head>
+
+<body onload="ornek()">
+    <div>
+        Güvenlik Kodu : 
+    </div><br/>
+
+    <canvas id="guvenlikkodu" width="150" height="50" style="border: 1px solid;"></canvas> <br/><br/>
+
+    <button onclick="degistir()">Kodu Değiştir</button>
+
+    <script type="text/javascript" language="javascript">
+        var islem;
+        function ornek(){
+            islem = document.getElementById("guvenlikkodu").getContext("2d");
+            islem.fillStyle = "grey";
+            degistir();
+        }
+
+        function degistir(){
+            var metin = "";
+            for(var i=0; i<6; i++){
+                var  rastgele = Math.random();
+                if(Math.round(rastgele)==0){
+                    metin += String.fromCharCode(48+9 * Math.random());
+                }
+                else{
+                    metin += String.fromCharCode(65+25 * Math.random());
+                }
+            }
+            islem.clearRect(0,0,150,50);
+            islem.fillRect(0,0,150,50);
+            islem.font = "30px calibri";
+            islem.strokeText(metin, 24, 34);
+        }
+    </script>
+    
+</body>
+</html>

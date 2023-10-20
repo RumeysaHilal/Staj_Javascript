@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  toISOString() : atanmış tarih ve saat bilgilerini iso standardı ile string veri türündeki düz bir metne çevrimini gerçekleştirir ve ekrana yazılmasını sağlar.
+
+        var zaman = new Date();
+        var zamanturu = typeof zaman;
+        document.write(zamanturu + " " + zaman + "<br/>");
+
+        var donustur = zaman.toISOString();
+        var donusturucu = typeof donustur;
+        document.write(donusturucu + " " + donustur + "<br/>");
+        
+
+  
+    </script>
+</body>
+</html>

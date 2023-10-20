@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    <style>
+        .demo{ color: blue;}
+    </style>
+</head>
+
+<body>
+    <h1 >Javascript Eğitim Seti</h1>
+    anlatan btk akademi <br/><br/>
+    <button onclick="ornek()">UYGULA</button>
+
+    <script type="text/javascript" language="javascript">
+        // createAttribute() : istenilen elemana yeni bir özellik node u oluşturur ve oluşturduğu özelliği object olarak geriye döndürür.
+        // setAttributeNode : create attribute metodu ile oluşturulan özellik nodeunu node objectine uygular 
+
+        function ornek(){
+            var deger = document.getElementsByTagName("h1")[0];
+            var ozellik = document.createAttribute("class");
+            ozellik.value = "demo";
+            deger.setAttributeNode(ozellik);
+        }
+    </script>
+</body>
+</html>

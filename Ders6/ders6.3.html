@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // map() : kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde çalıştırır. fonksiyonun her elemanı için geri döndürdüğü değerlerden yeni bir dizi oluşturur. 
+        // 1. parametre : dizi elemanı
+        // 2. parametre : indis
+        // 3. parametre : referans deger
+
+        function ornek(eleman, indis, referans){
+            var islem = eleman * 100;
+            return islem;
+        }
+
+        var sayilar = new Array ( 1,2,3,4,5,6,7,8,9,10) ;
+        document.write(sayilar + "<br/>");
+
+        var yeni = sayilar.map(ornek);
+        document.write(yeni);
+
+    </script>
+</body>
+</html>

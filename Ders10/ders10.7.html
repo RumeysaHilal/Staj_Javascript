@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        var bilgiler = {
+            isim : "hilal",
+            soyisim : "sevinç",
+            tarih : 2001
+        };
+
+        var isimyaz1 = bilgiler.isim;
+        var soyisimyaz = bilgiler.soyisim;
+        var dogumtarihi = bilgiler.dogumtarihi;
+        document.write("isim1 : " + isimyaz1 + "<br/>" + "soyisim : "+ soyisimyaz);
+
+        bilgiler.dogumyeri = "antalya";
+        bilgiler.meslek= "bilgisayar mühendisi";
+
+        bilgiler.ekdetay= function(){
+            alert("işlem tamamlandı.");
+        }
+    </script>
+</body>
+</html>

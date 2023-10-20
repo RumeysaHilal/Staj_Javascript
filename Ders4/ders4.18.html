@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // escape(): özel karakterleri unicode haline getirir.
+        /*
+            kodlamaya dahil edilmeyenler
+            0123456789
+            @ - _ . * + /
+            Türkçe karakterler hariç harfler
+        */
+
+        var metin = "^()javascript egitim seti";
+        document.write(metin + "<br/>");
+
+        var sonuc = escape(metin);
+        document.write(sonuc);
+
+
+
+    </script>
+</body>
+</html>

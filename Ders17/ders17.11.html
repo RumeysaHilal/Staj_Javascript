@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="secim">
+        <p >javascript</p>
+        <p >php</p>
+        <p >python</p>
+        <p >css</p>
+    </div>
+    <br /><br />
+    <div id="sonuc"></div>
+    
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // firstelementChild  : belge içerisindeki herhangi bir html elemanının ilk elemanı elde etmek için kullanılır. 
+
+        var deger = document.getElementById("secim").firstElementChild;
+        document.getElementById("sonuc").innerHTML = deger.innerHTML;
+
+    </script>
+</body>
+</html>

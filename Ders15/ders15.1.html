@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <iframe src="cerceve.html" style="width: 500px; height: 500px;"></iframe>
+    <br><br>
+    <button onclick="ornek()"> Test</button>
+
+    <script type="text/javascript" language="javascript">
+        // adoptNode() : belge içerisine başka bir belge node eklemek için kullanılır. eklenecek node un alt nodeları varsa kaldırılır
+
+        function ornek(){
+            var cerceve = document.getElementsByTagName("iframe")[0];
+            var alan = cerceve.contentWindow.document.getElementsByTagName("div")[0];
+            var sonuc = document.adoptNode(alan);
+            document.body.appendChild(sonuc);
+        }
+
+    </script>
+</body>
+</html>

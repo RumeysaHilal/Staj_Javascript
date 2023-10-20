@@ -1,0 +1,33 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .deneme{
+            width: 800px;
+            height: 600px;
+            border: 5px double #ef4f0be2;
+            padding-top: 25px;
+            padding-left: 25px;
+            background-color: rgb(212, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alan" class="deneme"></div>
+    <br/><br/><br/>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // offsetWidth  : html elemanının yükseklik elde etmek için kullanılır 
+        // offsetHeight : html elemanın toplam genişliğini elde etmek için kullanılır 
+
+        var degerbir = document.getElementById("alan").offsetWidth;
+        var degeriki = document.getElementById("alan").offsetHeight;
+        document.getElementById("sonucalani").innerHTML = "genişlik : " + degerbir + "px" + "</br> yükseklik : " + degeriki + "px" ;
+
+    </script>
+</body>
+</html>

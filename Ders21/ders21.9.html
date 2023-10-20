@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body onhashchange="ornek2()">
+    <button onclick="ornek()"> tıkla </button>
+    <div id="sonuc"></div>
+    <div id="sonuc2"></div>
+
+    <script type="text/javascript" language="javascript">
+        // onhashchange : sayfa url bağlantısında değişiklik olursa belirtilecek fonksiyon çalışır.
+
+        function ornek(){
+            location.hash = "orneksayfa";
+            var deger = location.hash;
+            document.getElementById("sonuc").innerHTML = "hash değişti" + deger;
+        }
+
+        function ornek2() {
+            document.getElementById("sonuc2").innerHTML = "hash değişti";
+        }
+    </script>
+</body>
+</html>

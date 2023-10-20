@@ -1,0 +1,31 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div class="bir"> javascript eğitim seti</div>
+    <div class="iki"> python eğitim seti</div>
+    <div class="üç"> java eğitim seti</div>
+    <div class="dört"> php eğitim seti</div>
+    <p class="beş"> jquery eğitim seti</p>
+    <p class="altı"> mysql eğitim seti</p>
+    <br>
+    <span id="sonucalani"></span>
+    <br><br>
+    <button onclick="ornek()"> çalıştır</button>
+
+    <script type="text/javascript" language="javascript">
+       // querySelectorAll() : css seçicileri ile belgedeki bir elemanların referansını elde etmek için kullanılır. 
+
+        function ornek(){
+            document.querySelectorAll("div")[0].style.backgroundColor="RED";
+            document.querySelectorAll("div")[1].style.backgroundColor="yellow";
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \r : düzenli ifade dahilinde kontrol edilecek dizindeki değerin sadece paragraf sonu karakteri ile eşleşmesi gerektiğini belritmek için kulllanılır.
+        // \u000D : 16 bit yazım şekli
+
+        var metin = "javascript\reğitim seti";
+        var ifade = new RegExp("\\r","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> UYGULA </button>
+
+    <script type="text/javascript" language="javascript">
+
+        function ornek()  {  
+            var islem = window.open();
+            islem.document.open();
+            islem.document.write("<html><head><title>Yeni Sayfa</title></head><body> Selam");
+            islem.document.close();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> Tıkla </button> <br/><br/>
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+
+        function ornek() {
+            var zamanFarki = event.timeStamp;
+            document.getElementById("sonuc").innerHTML = "Tıklandı " + "olayın oluşturma ve çalıştırılma arasındaki zaman farkı : (mikrosaniye)" + zamanFarki;
+        }
+
+    </script>
+</body>
+</html>

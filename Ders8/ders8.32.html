@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  getDay(): Tarihin gün bilgisini gün olarak geri döndürür. 0 - 6 arasıdna geri döndürür. haftanın ilk günü pazar olarak değerlendrilir ve değeri sıfırdır.
+        // getMinutes() : dakikayı geri döndürür.
+        // getSeconds() : saniyeyi geri getirir.
+        // getMilliseconds() : milisaniye
+
+        var zaman = new Date();
+        var saat = zaman.getHours();
+        var dakika = zaman.getMinutes();
+        var saniye = zaman.getSeconds();
+        var milisaniye = zaman.getMilliseconds();
+
+        document.write(saat + "<br/>" + dakika + "<br/>" + saniye
+        +  "<br/>" + milisaniye);
+  
+    </script>
+</body>
+</html>

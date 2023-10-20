@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // rightContext : eşleşme sağlanan değişken içerğinin sağında kalan tüm değerleri döndürür.
+
+        var metin = "Dünya'da ve Türkiye'de script dili olarak en yaygın kullanılan bir dil javascripttir";
+        var ifade = new RegExp("bir","g");
+        ifade.test(metin);
+        var sonuc = RegExp.rightContext;
+        document.write(sonuc);
+
+
+
+        
+    </script>
+</body>
+</html>

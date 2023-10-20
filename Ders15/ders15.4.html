@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // cookie() : 
+        /*
+        cookie() yapısı 
+        1. cookie cerez adı :
+        2. cerez değeri : 
+        3. cookie yaşam süresi :
+        4. path :
+
+        cookie (çerez) adı =  cookie değeri ; cookie yaşam süresi ; path 
+        */
+       var zaman = new Date();
+        zaman.setMonth(zaman.getMonth() + 1);
+
+        var cerezbiradi = "isim";
+        var c1deger = "javascript";
+
+        var cerezikiadi = "set";
+        var c2deger = "eğitim";
+
+       document.cookie = cerezbiradi + " = " + escape(c1deger) + ";expires=" + zaman.toGMTString();
+       document.cookie = cerezikiadi + " = " + escape(c2deger) + ";";
+
+
+       var cerezler = document.cookie;
+       document.getElementById("sonuc").innerHTML=unescape(cerezler);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> ekle </button>
+    <br /><br />
+    <a id="baglanti" target="_blank"> bağlantıya git </a>
+    <br />
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // setAttributeNode() : belge içindeki herhangi bir html elemanına createAttribute metodu ile oluşturulan özellik nodeunu ve değerini node objectine uygulamak için kullanılır.
+
+        function ornek() {
+            var baglan = document.getElementById("baglanti");
+            var eklenecek = document.createAttribute("href");
+            eklenecek.value = "https://www.google.com.tr";
+            baglan.setAttributeNode(eklenecek);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // watch(): nesnenin belirtilen bir özelliği değiştiğinde çalıştırılacak olan herhangi bir işlev eklemek için kullannılır.
+        // 1 . parametre : özellik adı 
+        // 2. parametre: özellik eski değer
+        // 3. parametre : özellik yeni değer
+
+        var demobir = {
+            isim : "java"
+        }
+        
+        demobir.watch("isim",function(ozellikadi,eski,yeni){
+            var gelenozellikadi = ozellikadi;
+            var geleneski = eski;
+            var gelenyeni = yeni;
+            var metin = "özellik adi : " + gelenozellikadi + "\neski değer: " + eski + "\nyeni değer: " + yeni;
+            alert(metin);
+        });
+
+        // sadece mozilla üzerinde çalışır 
+        
+    </script>
+</body>
+</html>

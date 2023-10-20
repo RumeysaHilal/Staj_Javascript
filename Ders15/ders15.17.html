@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .ornek{background-color: lawngreen; border: 1px solid red; color:blue}
+        .demo{background-color: orange; border: 1px solid red; color: blue}
+    </style>
+    
+</head>
+
+<body>
+    <p id="kimlik" name = "isim" class="ornek"> eğitim seti </p>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // item() : belge içindeki html elemanına eklenmiş olan özellik nodeu referansını elde etmek veya ayarlamak için kullanılır 
+
+        var islem = document.getElementById("kimlik");
+        islem.attributes.item(2).value = "demo";
+        
+
+
+    </script>
+</body>
+</html>

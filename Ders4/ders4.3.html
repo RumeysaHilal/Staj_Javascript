@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //search() kendisine paramtre olarak verilen ilk eşleşmeyi sağlayan indisi geri döndürür. 
+        // i : içeriğin büyük küçük harf olmasına bakmaz
+
+        var metin = "javascript dünya üzerinde kullanılan en yaygın script dilidir.";
+        document.write(metin + "<br/>");
+
+        var islem  = metin.search("script");
+        document.write(islem + "<br/>");
+
+        var islemiki  = metin.search(/Script/i);
+        document.write(islemiki);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>  
+    <div id="sonucalani"></div>
+    <script type="text/javascript" language="javascript">
+        // implementation : domimplementation aarayüzünden türetilmiş domimplementation nesnesi referansın boolean veri türünde elde etmek için kullanılır.
+        // implementation : uygulama
+        // feature : özellik
+
+        var islem  = document.implementation;
+        document.getElementById("sonucalani").innerHTML = islem.hasFeature("HTML", "1.0");
+        
+    </script>
+</body>
+</html>

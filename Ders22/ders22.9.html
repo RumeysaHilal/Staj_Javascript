@@ -1,0 +1,21 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    isim soyisim : <input id="adsoyad" type="text" onchange="ornek()">
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // onchange : form içerisindeki bir elemanın değeri veya seçimi değiştirildiğinde belirtielecek olan fonksiyon çalışır 
+
+        function ornek() {
+            var veri = document.getElementById("adsoyad").value;
+            document.getElementById("sonuc").innerHTML = veri;
+        }
+    </script>
+</body>
+</html>

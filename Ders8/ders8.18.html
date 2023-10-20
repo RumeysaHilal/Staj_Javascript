@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \f :  kontrol edilecek değişken içeriği karakter diziliminde bulunan değerin sadeece form besleme karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+        // \u000C : 16 bit yazım şekli 
+
+        var metin = "javascript \u000C eğitim seti";
+        var ifade = new RegExp("\\f","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

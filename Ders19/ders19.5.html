@@ -1,0 +1,38 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .deneme{
+            width: 70px;
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            background-color: rgb(238, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alan" class="deneme"> Javascript </div>
+    <br/><br/><br/>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // clientHeight : belge içindeki css ile atanmış içerik yüksekliği varsa onu elde etmek için kullanılır
+        // clientWidth : belge içindeki css ile atanmış içerik genişliği varsa onu elde etmek için kullanılır
+        /*
+        genişlik : padding left + genişlik +  padding right 
+        yükseklik : padding top + yükseklik +  padding bottom
+        */
+        var genislik = document.getElementById("alan").clientHeight;
+        var yukseklik = document.getElementById("alan").clientWidth;
+
+        document.getElementById("sonucalani").innerHTML = "genişliği : " + genislik + "px" + "</br> yüksekliği : " + yukseklik + "px" ;
+        
+
+    </script>
+</body>
+</html>

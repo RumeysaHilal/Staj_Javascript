@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="ornek"> eğitim seti</div>
+    <br /><br />
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // hasAttribute() : belge içindeki herhangi bir html elemanının belirtilen özelliğe sahip olup olmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür. 
+
+        var kontrolEt = document.getElementById("ornek").hasAttribute("name");
+        if(kontrolEt){
+            document.getElementById("sonucalani").innerHTML = "Belge içerisinde name özelliğine sahip";
+        }
+        else{
+            document.getElementById("sonucalani").innerHTML = "Belge içerisinde name özelliğine sahip değil";
+        }
+
+    </script>
+</body>
+</html>

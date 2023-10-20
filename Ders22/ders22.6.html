@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <video onloadstart="ornek()" controls>
+        <source  src="video.mp4" type="video/mp4">
+    </video>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // ondurationchange : medya elemanının nesnesinin süresi değiştirildiğinde belirtilecek olan fonk çalışır 
+        // onfocus : form içerisindeki bir elemana odaklanıldığında bir elemana odaklanıldığında belirtielecek olan fonk çalışır 
+        // onblur : form içerisindeki bir elemanın odağından çıkıldığında belirtilecek olan fonksiyon çalışır. 
+
+        function ornek() {
+            document.getElementById("sonuc").innerHTML = "medya yüklendi";
+        }
+    </script>
+</body>
+</html>

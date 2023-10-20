@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div draggable="true" ondrag="ornek()"> javascript  </div>
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // ondrag : belge içinde herhangi bir eleman sürüklendiğinde belirtilecek olan fonk çalışır 
+        // ondragstart : sürüklenme başladığında çalışacak fonk belirtir
+        // ondragend : elemanın sürüklenmesi bittiğinde belirtilecek olan fonk çalışır
+        // ondragenter : elemanın hedef kapsama alanına giriş yaptığında giriş yaptığında belirtilecek olan fonksiyon çalışır
+        
+        function ornek(){
+            document.getElementById("sonuc").innerHTML += "sürükleniyor" + "<br/>";
+        }
+    </script>
+</body>
+</html>

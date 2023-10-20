@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>
+    <a href="https://www.google.com/search?q=javascript"> javascript eğitim seti</a><br/>
+    <a href="https://www.google.com/search?q=python"> python eğitim seti</a><br/>
+    <a href="https://www.google.com/search?q=css"> css eğitim seti</a><br/>
+    link sayısı : <span id="sonucalani"></span><br/>
+
+    <script type="text/javascript" language="javascript">
+        // links : belge içerisindeki link referanslarına ulaşmak için kullanılır. referanslar birden fazla ise her link referansı döngü ile eelde edilebilir
+    
+        var islem = document.links.length;
+        document.getElementById("sonucalani").innerHTML= islem;
+        
+        var islem2 = document.links[0].href;
+        document.write(islem2);
+
+    </script>
+</body>
+</html>

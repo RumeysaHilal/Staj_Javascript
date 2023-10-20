@@ -1,0 +1,21 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <video onloadstart="ornek()" controls>
+        <source  src="video.mp4" type="video/mp4">
+    </video>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // onabort : sayfanın html veya medya elemanının verisinin yüklenmesi durdurulduğunda veya iptal ettirildiğinde belirtielecek olan fonksiyon çalışır 
+
+        function ornek() {
+            document.getElementById("sonuc").innerHTML = "medya yüklendi";
+        }
+    </script>
+</body>
+</html>

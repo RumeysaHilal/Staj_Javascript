@@ -1,0 +1,80 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Javascript Eğitim</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #kapsam_alani{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        #haber_alani{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #baslik_alani{
+            width: 900px;
+            float: left;
+            height: 60px;
+            text-align: left;
+        }
+        #icon_alani{
+            width: 100px;
+            height: 45px;
+            float: left;
+            text-align: right;
+            padding-top: 15px;
+        }
+        #icerik{
+            text-align: justify;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kapsam_alani">
+        <div id="haber_alani"> 
+            <div id="baslik_alani">
+                <h3> Biden: Gazze işgali büyük hata olur </h3>
+            </div>
+            <div id="icon_alani">
+                <img src="buyut.jpg" title="Metni Büyüt" style="cursor: pointer" onclick="buyut()">
+                <img src="kucult.jpg" title="Metni Küçült" style="cursor: pointer" onclick="kucult()">
+            </div>
+            <hr>
+            <div id="icerik">
+                ABD Başkanı Joe Biden, CBS News kanalının "60 Minutes" programına konuk oldu.<br><br>
+
+                İsrail'in Gazze'de "savaş kurallarına" uyacağına inandığını vurgulayan Biden, böylelikle masum Gazze halkının gıda, su ve ilaçlara erişimi olacağını dile getirdi.<br><br>
+
+                Biden, "Şu noktada İsrail'in Gazze'yi işgalini destekler misiniz?" sorusuna, "Bunun büyük bir hata olacağını düşünüyorum. Bana göre, Gazze'de olanlar aşırılıkçı Hamas'la ilgili.
+                Tüm Filistin halkını temsil etmiyor. İsrail'in Gazze'yi işgal etmesi hata olur. Ama girip Hizbullah ve Hamas gibi aşırılıkçıları yok etmesi gerekiyor." değerlendirmesinde bulundu.<br><br>
+
+                Hamas'ın tamamen yok edilmesi gerektiğini ancak Filistin yönetimi ve devleti için bir yol olması gerektiğini belirten Biden, "Bu yol, iki devletli çözümdür ve on yıllardır ABD'nin politikası haline gelmiştir. 
+                İsrail'in yanında 5 milyon Filistinliye bağımsız bir devlet oluşturacaktır." diye konuştu. <br>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" language="javascript">
+        var standart_fontBoyutu = 15;
+        function buyut(){
+            standart_fontBoyutu = standart_fontBoyutu + 1;
+            document.getElementById("icerik").style.fontSize = standart_fontBoyutu + "px";
+
+        }
+
+        function kucult(){
+            standart_fontBoyutu = standart_fontBoyutu - 1;
+            document.getElementById("icerik").style.fontSize = standart_fontBoyutu + "px";
+
+        }
+
+    </script>
+    
+</body>
+</html>

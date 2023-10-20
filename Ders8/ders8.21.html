@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \t : düzenli ifade dahilinde kontrol edilecek dizindeki değerin sadece yatay sekme karakteri ile eşleşmesi gerektiğini belritmek için kulllanılır.
+
+
+        var metin = "javascript     eğitim seti";
+        var ifade = new RegExp("\\t","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+
+        var metin2 = "javascripteğitim seti";
+        var ifade2 = new RegExp("\\t","g");
+        var sonuc2 = ifade2.test(metin2);
+
+        document.write(sonuc2 + "<br/>");
+  
+    </script>
+</body>
+</html>

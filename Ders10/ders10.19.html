@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // propertyIsEnumarable : parametrik olarak girilen özelliğin kullanılıp kullanılmadığını ve numaralandırılabilir olup olmadığını boolean olarak geri döner
+
+        var bilgi = {
+            isim : "java",
+            soyad : "script",
+            yil : 2023
+        }
+
+        var isimyaz = bilgi.isim;
+        var soyisimyaz = bilgi.soyad;
+        var yilyaz = bilgi.yil;
+
+        var isimkontrol = bilgi.propertyIsEnumerable("isim");
+        var soykontrol = bilgi.propertyIsEnumerable("soyad");
+        var yilkontrol = bilgi.propertyIsEnumerable("yil");
+
+        document.write(isimyaz + "<br/>");
+        document.write(isimkontrol + "<br/><br/>");
+
+        document.write(soyisimyaz + "<br/>");
+        document.write(soykontrol + "<br/><br/>");
+
+        document.write(yilyaz + "<br/>");
+        document.write(yilkontrol + "<br/><br/>");
+        
+    </script>
+</body>
+</html>

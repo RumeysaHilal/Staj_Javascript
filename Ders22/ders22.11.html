@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        isim soyisim <input id="adsoyad" type="text" oninvalid="ornek()" required> 
+        <input type="submit" value="gönder">
+    </form>
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // oninvalid : form içindeki bir elemanın değeri geçersizse belirtilecek olan fonk çalışır. 
+
+        function ornek() {
+            alert("lütfen ilgili alanı boş bırakmayınız");
+        }
+    </script>
+</body>
+</html>

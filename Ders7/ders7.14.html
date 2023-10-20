@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // exec() : eşleşmeyi sağlayan değişken içeriğinden yeni bir dizi oluşturarak geriye döndürür.
+        // g ayarı kullanılcak olursa exec metodu çağrıldığında lastindexten devam eder. 
+
+        var metin = "JAVASCRİPT Javascript javascript";
+        var ifade = new RegExp( "javascript" , "g");
+
+        var sonuc = ifade.exec(metin);
+        document.write(sonuc + "<br/>");
+
+        var sonuciki= ifade.exec(metin);
+        document.write(sonuciki + "<br/>");
+
+
+
+
+        
+    </script>
+</body>
+</html>

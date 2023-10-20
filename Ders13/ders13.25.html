@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek1()">HtMl</button>
+
+    <script type="text/javascript" language="javascript">
+        // open() : html çıktı akışı açmak için kullanılır
+        // close () : open metodu ile açılan html çıktı akışını kapatmak için kullanılır 
+        /* parametreler:
+        1. parametre : mimetype
+        2. parametre : geçmiş aktarımı */
+
+        function ornek1(){
+            document.open("text/html", "replace");
+            document.write("<html><head></head><body>Merhaba</body></html>");
+            document.close();
+        }
+
+    </script>
+</body>
+</html>

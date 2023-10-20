@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <a id="kimlik" href="https://www.google.com.tr" onclick="ornek(event)"> Google Git</a>
+    
+    <script type="text/javascript" language="javascript">
+        // defaultPrevented : preventedDefault() metodununn çağrılıp çağrılmadığını kontrol ederek boolean olarak sonucu geriye döndürür.
+        
+        function ornek(event){
+            event.preventDefault();
+            var sonuc =event.defaultPrevented;
+            if(sonuc){
+                alert("PreventDefault Kullanıldı");
+            }
+            else{
+                alert("PreventDefault Kullanılmadı");
+            }
+            
+        }
+        
+
+    </script>
+</body>
+</html>

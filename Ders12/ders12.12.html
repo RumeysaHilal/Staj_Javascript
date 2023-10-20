@@ -1,0 +1,30 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>
+    <a id="1" name="javascript" href="https://www.google.com/search?q=javascript"> Javascript </a><br/>
+    <a id="2" name="python" href="https://www.google.com/search?q=python"> Python </a><br/>
+    <a id="3" name="php" href="https://www.google.com/search?q=php"> PHP </a><br/>
+    <a id="4" name="jquery" href="https://www.google.com/search?q=jquery"> JQuery </a><br/><br/>
+    Çapa sayısı : <span id="capasayisialani"> 0 </span>
+    <script type="text/javascript" language="javascript">
+        // anchors : belge içerisineki çağa tagına sahip tüm elemanların referansını elde etmek için kullanılır.
+        // elemanlar birden fazla ise her bir eleman döngü ile elde edilebilir
+        
+        var sonuc = document.anchors;
+        var degerler = [];
+
+        for (var bas =0; bas<sonuc.length ; bas++){
+            var islemsonucu = sonuc[bas].innerHTML;
+            degerler[bas] = islemsonucu;
+        }
+        document.getElementById("capasayisialani").innerHTML = degerler;
+
+    </script>
+</body>
+</html>

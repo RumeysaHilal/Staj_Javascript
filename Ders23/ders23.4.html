@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <a href="https://www.google.com.tr" onclick="ornek(event)"> Google'a Git</a>
+    <!-- <button onclick="ornek()"> Tıkla </button> <br/><br/>
+    <div id="sonuc"></div> -->
+    
+    <script type="text/javascript" language="javascript">
+        // preventDefault : tanımlı olayın işlevini kaldırmak iptal etmek için kullanılır.
+        
+        document.getElementsByTagName("A")[0].addEventListener("click",function(event){
+            event.preventDefault();
+        })
+        
+        // function ornek(event) {
+        //     event.preventDefault();
+        // }
+
+    </script>
+</body>
+</html>

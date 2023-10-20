@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button id="bir" onclick="ornekbir()">birinci açıklama metni</button><button id="ikinci" onClick="ornekiki()">ikinci açıklama metni</button>
+    <!-- Javascript -->
+
+    <script type="text/javascript" language="javascript">
+        // createComment() : belge içine açıklama nodeu oluşturur.
+        // appendChild() : bir nodeu belirtilecek olan herhangi bir elemanın ieçrisinde olamk üzere eklemek çin kullanılır. 
+        function ornekbir(){
+            var hedef = document.createComment("burası ornekbir açıklama metnidir");
+            document.body.appendChild(hedef);
+        }
+        function ornekiki(){
+            var hedef = document.createComment("burası ornekiki açıklama metnidir");
+            document.body.appendChild(hedef);
+        }
+    </script>
+</body>
+</html>

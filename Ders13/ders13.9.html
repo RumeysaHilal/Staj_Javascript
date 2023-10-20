@@ -1,0 +1,30 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <script type="text/javascript" language="javascript">
+       // plugins : browserdaki tüm eklentilerin referansını elde etmek için kullanılır
+        // hangi pluginler var bulmak için 
+
+        var deger = navigator.plugins.length;
+        for (var i = 0; i<deger; i++) {
+            var sonuc = navigator.plugins[i];
+            document.write("plugins :" + sonuc.name + "<br/>");
+            document.write("dosya :" + sonuc.filename + "<br/>");
+            document.write("açıklama :" + sonuc.description + "<br/>");
+        
+            var plugindegeriuzunluk = sonuc.length;
+            for (var j = 0; j<plugindegeriuzunluk; j++) {
+                var ikincideger = sonuc[j];
+                document.write("mime-type : " + ikincideger.type + "<br/><br/>S");
+            }
+        }
+
+    </script>
+</body>
+</html>

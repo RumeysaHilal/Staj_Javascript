@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // filter() : kendisine parametre olarak verilen fonk dizideki her eleman üzerinde çalıştırır,true değerleri ile yeni bir dizi oluşturur.
+        // 1. parametre : işlem her çalıştığında dizinin elemanı
+        //2. parametre : dizinin elemanının indis değeri
+        //3. parametre : tekrarlama işlemindeki diziyi tutan değişkenin referansı
+
+        function bul(eleman, sira, degisken){
+            return eleman %2 !== 0; 
+        }
+
+        var rakamlar = new Array (1,2,3,4,5,6,7,8,9,10);
+        document.write(rakamlar + "<br/>");
+        
+        var tek_sayilar = rakamlar.filter(bul);
+        document.write(tek_sayilar);
+    </script>
+</body>
+</html>

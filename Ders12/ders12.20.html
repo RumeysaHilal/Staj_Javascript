@@ -1,0 +1,32 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>
+    <form id="birinciform" >
+        adı soyadı :<input type="text" id="birincimetinkutusu" name="metinkutusu" value="javascript">
+        sehir : <input type="text" id="birincisehirkutusu" name="sehirkutusu"  value="sehir">
+        <button>Kaydet</button>
+    </form>
+    <br/><br/><br/><br/>
+    <form id="ikinciform">
+        website :<input type="text" id="birinciwebkutusu" name="webkutusu" value="javascript.com">
+        mail adresi : <input type="text" id="birincimailkutusu" name="mailkutusu"  value="js@mail">
+        <button>Kaydet</button>
+    </form>
+    <br/><br/><br/><br/>
+
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // forms : belge içerisindeki form tagına sahip elemanların referansını elde etmek için kullanılır. birden fazlaysa döngü kullanılır.
+
+        var sonuc = document.forms.item(0).id;
+        document.getElementById("sonucalani").innerHTML = "form sayısı: " + sonuc;
+    </script>
+</body>
+</html>

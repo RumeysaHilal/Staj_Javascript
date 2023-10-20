@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>  
+
+    İlgi alanlarınız : <br/>
+    Alışveriş <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    Eğlence <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    Sinema <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    Spor <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    Gezi <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    İnternet <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+    Tiyatro <input name = "ilgialani" type="checkbox" value="alışveriş"><br/>
+
+    <button onclick = "isaretle()"> Hepsini Seç </button>
+    <button onclick = "kaldir()"> Seçimleri Kaldır</button>
+    <script type="text/javascript" language="javascript">
+        // getElementByName() : parametre verilen değer doğrultusunda, belge içerisinde belirtilen name özelliğine sahip tüm elemanların referansını elde etmek için kullanılır. birden fazla ise her bir eleman döngü ile elde edilebilir
+
+        function isaretle(){
+            var sonuc = document.getElementsByName("ilgialani");
+            for (var bas=0; bas<sonuc.length ; bas++){
+                sonuc[bas].checked = true;
+            }
+        }
+
+        function kaldir(){
+            var sonuc = document.getElementsByName("ilgialani");
+            for (var bas=0; bas<sonuc.length ; bas++){
+                    sonuc[bas].checked = false;
+            }
+        }
+
+    </script>
+</body>
+</html>

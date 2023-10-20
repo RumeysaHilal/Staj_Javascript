@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>
+    <button onclick="ornek()"> TIKLA </button>
+    <div id="sonucalani"></div>
+    <script type="text/javascript" language="javascript">
+        // readyState : belge içeriğinin browser tarafından yüklenme durumu değeri referansını elde etmek için kullanılır 
+
+        function ornek(){
+            var sonuc = document.readyState;
+            document.getElementById("sonucalani").innerHTML = sonuc;
+        }
+       
+        
+    </script>
+</body>
+</html>

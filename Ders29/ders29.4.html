@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Javascript Eğitim</title>
+    
+</head>
+
+<body>
+    <span id="saat"></span>
+
+    <script type="text/javascript" language="javascript">
+        
+        function saatguncelle(){
+            var zaman = new Date();
+            var saatdegeri= zaman.getHours();
+            var dakikadegeri= zaman.getMinutes();
+            var saniyedegeri= zaman.getSeconds();
+            document.getElementById("saat").innerHTML = saatdegeri + " : " + dakikadegeri + " : " + saniyedegeri;
+        }
+
+        setInterval(saatguncelle,1000);
+
+    </script>
+    
+</body>
+</html>

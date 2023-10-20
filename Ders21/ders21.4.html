@@ -1,0 +1,21 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div onmousedown="ornek()">Eğitim Seti</div>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        //  altkey : belge içindeki herhangi bir event tetiklenirken alt tuşuna basılıp basılmadığınıkontrol ederek boolean veri türünde sonucu döndürür
+        // ctrlkey
+        function ornek(){
+            var deger = event.altKey;
+            document.getElementById("sonucalani").innerHTML = deger
+        }
+    </script>
+</body>
+</html>

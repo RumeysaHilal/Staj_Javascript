@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // avarage() : sayısal içerikli dizilerin üzerinde tek tek çalışıp ortalama hesaplar
+
+        Array.prototype.avarage = function(){
+            var islem = 0; 
+            for(var baslangic = 0; baslangic<this.length ; baslangic++){
+                islem += this[baslangic];
+            }
+            var sonuc = islem / this.length;
+            return sonuc;
+        }
+
+        var sayilar = new Array ( 1, 52, 36, 8, 15, 23, 48);
+        document.write(sayilar + "<br/>");
+
+        var ortalama = sayilar.avarage();
+        document.write(ortalama);
+    </script>
+</body>
+</html>

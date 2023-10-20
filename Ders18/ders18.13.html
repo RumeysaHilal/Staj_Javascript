@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="ornek">
+        <div id="jsdugumu">javascript</div>
+        <div id="phpdugumu">php</div>
+        <div id="pythondugumu">python</div>
+        <div id="csdugumu">css</div>
+    </div>
+    <br /><br />
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // parentNode : herhangi bir node un bir üst nodeunu ede etmek için kullanılır
+
+        var deger = document.getElementById("jsdugumu").parentNode;
+        document.getElementById("sonuc").innerHTML=deger;
+
+
+
+    </script>
+</body>
+</html>

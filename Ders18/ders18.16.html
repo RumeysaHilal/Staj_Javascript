@@ -1,0 +1,34 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> Değiştir</button>
+    <br/><br/>
+    <ul id="liste">
+        <li id="bir">javascript</li>
+        <li id="iki">php</li>
+        <li id="uc">python</li>
+        <li id="dort">css</li>
+    </ul>
+    <br /><br />
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // removeChild() : belge içeriğinin içerdiği nodeu silmek veya kaldırmak için kullanılır. 
+
+        function ornek() {
+            var yenieleman = document.createElement("li");
+            var yenidugum = document.createTextNode("xml");
+            yenieleman.appendChild(yenidugum);
+
+            var deger = document.getElementById("liste");
+            deger.replaceChild(yenieleman, deger.childNodes[0]);
+        }
+
+    </script>
+</body>
+</html>

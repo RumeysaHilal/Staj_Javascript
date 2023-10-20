@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  toLocaleString() : atanmış tarih ve saat bilgilerini tarayıcı diline göre alarak string hale getirir..
+
+        var zaman = new Date();
+        var zamanturu = typeof zaman;
+        document.write(zamanturu + " " + zaman + "<br/>");
+
+        var donustur = zaman.toLocaleString();
+        var donusturucu = typeof donustur;
+        document.write(donusturucu + " " + donustur + "<br/>");
+        
+
+  
+    </script>
+</body>
+</html>

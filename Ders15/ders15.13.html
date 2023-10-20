@@ -1,0 +1,28 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .deneme{background-color: lawngreen;}
+    </style>
+    
+</head>
+
+<body>
+    <div > javascript eğitim seti</div>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // setnamedıtem : belge içindeki html elemanına özellik nodeu ve değeri eklemek için kullanılır 
+
+         var islem = document.getElementsByTagName("div")[0];
+         var ekle = document.createAttribute("class");
+         ekle.value = "deneme";
+         islem.attributes.setNamedItem(ekle);
+
+         alert(sonuc);
+
+    </script>
+</body>
+</html>

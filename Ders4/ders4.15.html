@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // decodeURI(): değişken içindeki metindebulunan utf8 kodunu normal hale çevirir
+        /*
+            kodlamaya dahil edilmeyenler:
+            0123456789
+            harfler, özel ve Türkçe olmayan karakterler
+            karakterler
+        */
+        var icerik1 = "https://www.btkakademi.gov.tr/portal/course/player/deliver/javascript-8099%C4%9F%C4%9F%C4%B1";
+        document.write(icerik1 + "<br/>" );
+
+        var sonuc = decodeURI(icerik1);
+        document.write(sonuc);
+
+
+    </script>
+</body>
+</html>

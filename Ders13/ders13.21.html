@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // removeAddListener() : belgeye add metodu ile eklenmiş olan dinleyicisini silmek için kullanılır. 
+
+        document.addEventListener("click", ornek);
+        
+        function ornek(){
+            alert("tıklandı");
+            document.removeEventListener("click", ornek);
+        }
+
+
+
+    </script>
+</body>
+</html>

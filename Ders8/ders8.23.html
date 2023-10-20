@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \XXX : sekizlik sayı sistem tabanında ascii karşılığı olan karakteriyle eşleşmesi gerektiğini belirtmek için kullanılır.
+        // değer aralığı = /000 - \377
+        // 166 154 157 141 156 157
+
+        var metin = "javascript";
+        var ifade = new RegExp("\\152");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

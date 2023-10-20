@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \uXXXX : değerlerin 16 bitlik unicode değerleri ile eşleşmesini kontrol etmek için kullanılır.
+        // değer aralığı = /u0000 -\uFFFF
+        // 0x6a 0x61 0x76 0x61
+
+        var metin = "javascript";
+        var ifade = new RegExp("\\u0061");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

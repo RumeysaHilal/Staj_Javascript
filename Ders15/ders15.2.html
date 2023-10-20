@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <iframe id = "cercevealani" src="cerceve2.html" style="width: 500px; height: 500px;"></iframe>
+    <br><br>
+    <button onclick="ornek()"> Test</button> <br><br>
+
+    <script type="text/javascript" language="javascript">
+        // importNode() : belge içerisine başka bir belgeden node eklemek için kullanılır. eklenecek olan node un varsa tüm alt nodeları da işleme dahil edilir 
+        // appendChild() 
+
+        function ornek() {
+            var cerceve2 = document.getElementById("cercevealani");
+            var alan = cerceve2.contentWindow.document.getElementsByTagName("div")[0];
+            var sonuc = document.importNode(alan,true);
+            document.body.appendChild(sonuc);
+        }
+
+    </script>
+</body>
+</html>

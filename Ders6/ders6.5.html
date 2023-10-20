@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // shuffle() :  dizinin her elemanı üzerinde tek tek çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturur
+
+        Array.prototype.shuffle = function(){
+            var elemansayisi = this.length;
+            while(--elemansayisi > 0){
+                var rastgele = Math.floor(Math.random() * (elemansayisi + 1 ));
+                var temp = this[rastgele];
+
+                this[rastgele] = this[elemansayisi];
+                this[elemansayisi] = temp;
+
+                return this;
+            }
+        }
+
+        var icerik = new Array ("A", "B", "C", "D", "E");
+        document.write(icerik + "<br/>");
+
+        var karistir = icerik.shuffle();
+        document.write(karistir + "<br/>");
+    </script>
+</body>
+</html>

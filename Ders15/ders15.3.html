@@ -1,0 +1,36 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body onload="ornek()">
+
+
+    <button onclick="ekle()"> düğüm ekle</button> <button onclick="ornek()"> normalize </button> <br><br>
+
+    <div id="sayialani"></div>
+    <script type="text/javascript" language="javascript">
+        // normalize() : belge içerisindeki boş text nodelarını kaldırarak bitişik node'a katılmasını sağlar. 
+
+        function ekle() {
+            var islem = document.createTextNode("yeni düğüm ");
+            var sonuc = document.body;
+            sonuc.appendChild(islem);
+            var islem = document.getElementById("sayialani");
+            islem.innerHTML = sonuc.childNodes.length;
+        }
+
+        function ornek() {
+            document.normalize();
+            var islem = document.body;
+            var sonuc = document.getElementById("sayialani");
+            sonuc.innerHTML = islem.childNodes.length;  
+        }
+
+       
+
+    </script>
+</body>
+</html>

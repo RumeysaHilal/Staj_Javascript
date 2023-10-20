@@ -1,0 +1,33 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .demo{ background-Color : red; color: aliceblue; margin: 3px; border: 5px double blue; padding: 5px;}
+    </style>
+</head>
+
+<body>
+    <div id="kimlikbir" name="isimbir"> javascript eğitim seti</div>
+    <div id="kimlikiki" name="isimiki"> css eğitim seti</div>
+    <div id="kimlikuc" name="isimuc"> php eğitim seti</div>
+    <br><br>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // style : belge içindeki html elemanlarına css eklemek veya referansını elde etmek için kullanılır.
+
+        var islem = document.getElementById("kimlikiki");
+        var stilbagla = document.getElementsByTagName("style")[0];
+        var ekle = document.createAttribute("style");
+        ekle.value = stilbagla.innerHTML;
+        islem.attributes.setNamedItem(ekle);
+        
+        //document.getElementById("kimlikiki").innerHTML = stilbagla.innerHTML;
+
+
+
+    </script>
+</body>
+</html>

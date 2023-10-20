@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // reduce(): kendisine parametre olarak verilen fonk dizideki her eleman üzerinde soldn sağa tek tek çalıştırır ve tek ibr değer oluşturarak tek bir değer oluşturur
+        // 1. parametre : dizi içinde mevcut değerlerin toplamı
+        // 2. parametre : her işlemde elde edilen dizi elemanı 
+        // 3. parametre : her işlemde elde edilen diziyi tutan değişkenin indisi
+        // 4. parametre : her tekrarda diziyi tutan değişkenin referansı
+
+        function deneme(deger, eleman, sira, degisken){
+            return deger+eleman;
+        }
+
+        var sayilar = new Array (100,200,300,400,500);
+        document.write(sayilar + "<br/>");
+
+        var sayilarislem = sayilar.reduce(deneme);
+        document.write(sayilarislem + "<br/>");
+
+        
+;
+        
+
+    </script>
+</body>
+</html>

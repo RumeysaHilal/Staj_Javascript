@@ -1,0 +1,50 @@
+[
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-45.473",
+    "action": "Basılan Tuş: p",
+    "totalchars": 1,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-45.833",
+    "action": "Basılan Tuş: r",
+    "totalchars": 2,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-46.021",
+    "action": "Basılan Tuş: i",
+    "totalchars": 3,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-46.786",
+    "action": "Basılan Tuş: n",
+    "totalchars": 4,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-46.960",
+    "action": "Basılan Tuş: t",
+    "totalchars": 5,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-47.382",
+    "action": "Basılan Tuş: (",
+    "totalchars": 6,
+    "totallines": 1
+},
+{
+    "MachineId": "95913381420",
+    "time": "2021_09_05 20-38-48.524",
+    "action": "Basılan Tuş: r",
+    "totalchars": 10,
+    "totallines": 1
+}]

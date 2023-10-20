@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        var bilgiler = {
+            isim : "hilal",
+            soyisim : "sevinç",
+            detaylar: function(){
+                this.yas = "22";
+                this.meslek = "bilgisayar mühendisi";
+            }
+        }
+
+        var isimyaz= bilgiler.isim;
+        var soyisimyaz = bilgiler.soyisim;
+
+        var yasyaz = bilgiler.yas;
+        var meslekyaz = bilgiler.meslek;
+
+        document.write("isim " + isimyaz + "<br/>");
+        document.write("soyisim " + soyisimyaz + "<br/>");
+        document.write("yas " + yasyaz + "<br/>");
+        document.write("meslek " + meslekyaz + "<br/>");
+
+
+    </script>
+</body>
+</html>

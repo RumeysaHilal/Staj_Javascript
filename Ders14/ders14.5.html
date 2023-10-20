@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id ="bir" ><span id ="birbir">javascript</span><span id="biriki"> eğitim</span> seti </div>
+    <div id="iki"><span id ="ikibir">html</span><span id="ikiiki">eğitim</span> seti </div>
+    <div class="bir"> css eğitim seti</div>
+    <div class="iki"> python eğitim seti</div>
+    <br><br>
+    <button onclick="ornek()"> işlemi gerçekleştir </button>
+    <script type="text/javascript" language="javascript">
+       // querySelector() : css seçicileri ile belgedeki bir elemanın referansını elde etmek için kullanılır. 
+
+       function ornek(){
+        var sonuc = document.querySelector("div#bir>span#biriki").innerHTML;
+        alert(sonuc);
+       }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \n : düzenli ifade dahilinde kontrol edilecek dizindeki değerin sadece yeni satır karakteri ile eşleşmesi gerektiğini belritmek için kulllanılır.
+
+        var metin = "javascript\neğitim seti";
+        var ifade = new RegExp("\\n","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

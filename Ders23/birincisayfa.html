@@ -1,0 +1,48 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <div> Birinci Sayfadasınız</div> <br/><br/>
+    <a href="birincisayfa.html"> Birinci Sayfa</a>
+    <a href="ikincisayfa.html"> Ikinci Sayfa</a>-
+    <a href="ucuncusayfa.html"> Ucuncu Sayfa</a>- <br/><br/>
+
+    <button onclick="gerigit()"> Geri Git </button>
+    <button onclick="ilerigit()"> İleri Git </button>
+    <button onclick="ikigerigit()"> İki Sayfa Geri Git </button>
+    <button onclick="ikiilerigit()"> İki Sayfa İleri Git </button>
+
+    <div> Geçmiş Uzunluk Kaydı : <span id="uzunluk"></span></div>
+    <script type="text/javascript" language="javascript">
+        // history : pencerenin geçmiş nesnesine erişim için kullanılır. özellikleri sayesinde geçmiş işlemleri yapılabilir
+        // back : sayfa geçmişinde bir geri gider
+        // forward : sayfa geçmişinde ileri gider 
+        // go() : sayfa geçmişinde belirtilen kadar ileri veya geri gider.
+        // length : sayfa geçmişi sayısını bulur. 
+        var gecmis = history.length;
+        document.getElementById("uzunluk").innerHTML = gecmis;
+        
+        function gerigit(){
+            window.history.back();
+        }
+
+        function ilerigit(){
+            window.history.forward();
+        }
+
+        function ikigerigit(){
+            window.history.go(-2);
+        }
+
+        function ikiilerigit(){
+            window.history.go(2);
+        }
+
+    </script>
+    
+</body>
+</html>

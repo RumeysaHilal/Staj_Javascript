@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    
+</head>
+<body>
+    <script id="birinci" type="text/javascript" language = "JavaScript"></script>
+    <script id="ikinci" type="text/javascript" language = "JavaScript"></script>
+    
+    <script type="text/javascript" language="javascript">
+        // scripts : belge içerisindeki script tagına sahip tüm elemanların referansını elde etmek için kullanılır. 
+
+        var sonuc = document.scripts;
+        var uzunluk = document.scripts.length;
+        for (var i = 0; i < uzunluk; i++) {
+            var islemsonucu = sonuc[i].id;
+            document.write(islemsonucu +"<br/>");
+        }
+
+
+    </script>
+</body>
+</html>

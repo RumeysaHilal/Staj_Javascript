@@ -1,0 +1,5 @@
+import pandas as pd
+train_data=pd.read_csv("train.csv")
+train_data["Öbek İsmi"].value_counts()
+
+bunu yaz not defterine

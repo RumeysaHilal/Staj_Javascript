@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  (x|y) : belirtilen x veya y karakterlerinden herhangi biri ile eşleşmesi gerektiğini kontrol eder
+
+        var metin = "volkan javascript eğitim seti hakan";
+        var ifade = new RegExp("(vol| ha)kan","g" );
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+
+
+
+        
+    </script>
+</body>
+</html>

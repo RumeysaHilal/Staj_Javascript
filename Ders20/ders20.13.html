@@ -1,0 +1,50 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .mousealani{
+        background-color: antiquewhite;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 500px;
+        border : 1px dotted black;
+        text-align: center;
+    }
+    .sonucalani{
+        background-color: antiquewhite;
+        margin: 0;
+        margin-top: 5px;
+        padding: 5px;
+        width: 100%;
+        border : 1px dotted black;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="mousealani" id="kimlik" onmousemove="ornek()"> mouseu bu alanda gezdiriniz </div>    
+    <br>
+    <div id="sonucalani" class="sonucalani"> mouse koordinati (x) : <span id="xdegeri"></span> (y) <span id="ydegeri"></span></div>
+
+    <script type="text/javascript" language="javascript">
+        // clientX : mouse eventı gerçekleştiğinde tarayıcı penceresine göre yatay konum koordinatını geriye döndürür.
+        // clientY : mouse eventı gerçekleştiğinde tarayıcı penceresine göre dikey konum koordinatını geriye döndürür.
+        // geçerli pencerenin konumuna göre alır 
+        function ornek(){
+            var xdegeri = event.clientX;
+            var ydegeri = event.clientY;
+            document.getElementById("xdegeri").innerHTML = xdegeri;
+            document.getElementById("ydegeri").innerHTML = ydegeri;
+        }
+
+    </script>
+</body>
+</html>

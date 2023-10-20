@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>  
+
+    <div>JAVASCRİPT</div>
+    <p> EĞİTİM SETİ </p>
+
+    <ul>
+        <li> HTML </li>
+        <li> Php </li>
+        <li> Xml </li>
+        <li> Python </li>
+        <li> Css</li>
+    </ul>
+    <br/><br/><br/>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // getElementByTagName(): belge içindeki tag adına sahip değerlerin referanslarına ulaşmak için kullanılır. elemanların referansları birden fazla ise döngü ile elde edilebilir.
+        
+        var islem = document.getElementsByTagName("LI")[2].innerHTML;
+        document.getElementById("sonuc").innerHTML = islem;
+
+
+    </script>
+</body>
+</html>

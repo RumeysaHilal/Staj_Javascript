@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body onhashchange="ornek2()">
+    <button onclick="ornek()"> tıkla </button>
+    <div id="sonuc"></div>
+    <div id="sonuc2"></div>
+
+    <script type="text/javascript" language="javascript">
+        // oldurl : 
+        // newurl : 
+
+        function ornek(){
+            location.hash = "orneksayfa";
+            var deger = location.hash;
+            document.getElementById("sonuc").innerHTML = "hash değişti" + deger;
+        }
+
+    </script>
+</body>
+</html>

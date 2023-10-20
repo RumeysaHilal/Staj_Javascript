@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // __proto__ : nesnenin proto nesnesini elde etmek için kullanılır ve proto içindeki özelliklere ulaşarak geriye döndürür.
+
+        function bilgi() {
+            this.isimozellik = "java";
+            this.soyadozellik = "script";
+            this.yilozellik = 2023;
+        }
+
+        bilgi.prototype.islem = function(){
+            return this.ifade ="slm";
+        }
+        var sonuc = new bilgi();
+
+        sonuc.__proto__.islem();
+
+        var yazdir = sonuc.isimozellik;
+        var ssoyad= sonuc.soyadozellik;
+        var ifadeyaz = sonuc.ifade ;
+
+        document.write(yazdir + "<br/>");
+        document.write(ssoyad + "<br/>");
+        document.write(ifadeyaz + "<br/>");
+
+        
+    </script>
+</body>
+</html>

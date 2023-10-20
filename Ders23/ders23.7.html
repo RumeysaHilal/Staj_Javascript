@@ -1,0 +1,43 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <button onclick="PencereAc()"> Pencere Aç </button>
+    <script type="text/javascript" language="javascript">
+        // open() : yeni tarayıcı peneresi açmak için kullanılır 
+        /*
+        1. parametre : url
+        2. parametre : pencerenin adı
+        3. parametre : özellikler 
+        4. parametre : pencerenin geçmiş bilgisi
+        */
+        
+        /*
+        fullscreen : açılacak pencerenin tam ekran modunda gösterilip gösterilmeyeceğini ayarlamak için kullanılır. yes veya no şeklinde
+        location : adres çubuğunun gösterilip gösterilmeyeceğini ayarlar
+        menubar : menu araç çubuğunun gösterilip gösterilmeyeceğini
+        scrollbar : kaydırma çubuğunun "                "
+        status : durum çubuğunun görünüşü için
+        toolbar : navigasyon araç çubuğu ileri geri yenile barının olduğu yer
+        titlebar : tam ekran modunda başlık çubuğunun görünümü için kullanılır
+        resizable : boyutlanabilir olup olmadığını ayarlamak için kullanılır
+        width : genişliğini ayarlamak için kullanılır
+        height : açılacak pencerenin yüksekliğini bulmak için kullanılır
+        left : yatay konumunu bulmak için 
+        top : dikey konumunu bulmak için kullanılır 
+        */
+
+        function PencereAc(){
+            var pencere = window.open("", "Yeni Pencere", "width=500, height=300, left=200, top=100, location=yes, menubar=yes, scrollbars=yes");
+            pencere.document.write("Javascript<br/>");
+        }
+
+        
+
+    </script>
+</body>
+</html>

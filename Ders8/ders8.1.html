@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  *  : kontrol edielcek değişken içeriğğinin sıfır veya daha fazla defa twkrarlanmış olmadı gerektiğin belirtmek için kullanılır.
+
+        var metin = "javascript dilinin dosya uzantısı js jss jjsss js şeklindedir.";
+        var ifade = new RegExp("js*" , "gi");
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc);
+        
+
+
+        
+    </script>
+</body>
+</html>

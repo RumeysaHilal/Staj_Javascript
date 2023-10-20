@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <img src="resim.jpeg" id="resim1" border="0" width="75" height="75" onmouseout="kucult()" onmouseover="buyut()" >
+
+    <script type="text/javascript" language="javascript">
+        // onmouseout : mouse üzerinden geçtiği zaman parametre olarak belitilen fonk çalıştırılması sağlanır
+
+        function buyut() {
+            document.getElementById("resim1").style.width = "250px";
+            document.getElementById("resim1").style.height = "250px";
+        }
+        function kucult() {
+            document.getElementById("resim1").style.width = "75px";
+            document.getElementById("resim1").style.height = "75px";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // toString() : 
+
+        function islem(){
+            this.isim = "java script ";
+        }
+
+        islem.prototype.toString = function(){
+            document.write(this.isim);
+        }
+
+        var bilgiler  = new islem;
+        var sonuc = bilgiler.toString();
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> Tıklayınız</button> <br/> <br/>
+    <div id="sonuc"></div>
+    <script type="text/javascript" language="javascript">
+        // prompt() : kullanıcıdan bilgi talep etmek için girdi penceresi oluşturmak amacıyla kullanılır. 
+        function ornek(){
+            var veri = prompt("Lütfen adınızı belirtir misiniz? ");
+            document.getElementById("sonuc").innerHTML = veri;
+        }
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \0 :  kontrol edilecek değişken içeriği karakter diziliminde bulunan değerin sadece null karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+
+        var metin = "javascript \u0000 eğitim seti";
+        var ifade = new RegExp("\\0","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

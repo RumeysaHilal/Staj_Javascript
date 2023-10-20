@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  [abc] : belirtilen karakterlerden herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullanılır. 
+
+        var metin = "Javascript eğitim seti";
+        var ifade = new RegExp("[javascript]","gi" );
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \D :  düzenli ifadelerden sadece rakam dışındaki karakterlerinin herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullanılır.
+
+        var metin = "?!85'+e%git&/(Vka$#89_63£)";
+        var ifade = new RegExp("\\D","g");
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

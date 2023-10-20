@@ -1,0 +1,44 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+    <style>
+        .orneksinifi{
+            color: rgb(247, 6, 6);
+            width: 500px;
+            height: 20px;
+            margin: 0;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(15, 127, 239);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sonuc" class="orneksinifi">Javascript Eğitim Seti</div>
+    
+    <script type="text/javascript" language="javascript">
+        // setInterval() : belirtilen süre aralığında tekrar tekrar çalışır 
+
+        setInterval(renkDegistir,2000);
+         
+
+        function renkDegistir(){
+            var alanimiz = document.getElementById("sonuc");
+            var sayi = Math.round(Math.random() * 10)  ;
+            
+            if(sayi == 1 && sayi <=5){
+                alanimiz.style.backgroundColor = "#d029d9" ;
+            }
+            else if(sayi >= 6 && sayi <=10){
+                alanimiz.style.backgroundColor = "#178534" ;
+            }
+
+        }
+
+   </script>
+    
+</body>
+</html>

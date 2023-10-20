@@ -1,0 +1,46 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek1()"> Birinciye Ekle </button>
+    <button onclick="ornek2()"> İkinciye Ekle </button>
+    <ul id="ornek">
+        <li >javascript</li>
+        <li >php</li>
+        <li >python</li>
+        <li >css</li>
+    </ul>
+    <br /><br />
+
+    <ul id="ornek2">
+        <li >photoshop</li>
+        <li >corel</li>
+        <li >paint</li>
+        <li >paint.net</li>
+    </ul>
+    <br /><br />
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // appendChild() : bir düğümü belirtilen değer olarak en son olarak ekler
+
+        function ornek1() {
+            var eleman = document.createElement("li");
+            var icerik = document.createTextNode("xml");
+            eleman.appendChild(icerik);
+            document.getElementById("ornek").appendChild(eleman);
+        }
+        function ornek2() {
+            var eleman = document.createElement("li");
+            var icerik = document.createTextNode("irfanview");
+            eleman.appendChild(icerik);
+            document.getElementById("ornek2").appendChild(eleman);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // multiline : m değerinin kullanılıp kullanılmaığını kontrol eder.
+
+        var metin = "\njavascript\negitim\nseti";
+        var ifade = new RegExp("i","gm");
+        var sonuc = metin.match(ifade);
+        var kosul = ifade.multiline;
+
+        document.write(metin + "<br/>");
+        document.write(sonuc + "<br/>" + kosul);
+        
+    </script>
+</body>
+</html>

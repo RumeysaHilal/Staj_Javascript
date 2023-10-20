@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <button onclick="ornek()"> ekle </button>
+    <br />
+    <a id="baglanti" target="_blank"> bağlantıya git </a>
+    <br />
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // setAttribute() : belge içindeki html elemanına belirtilen özelliği ve değeri eklemek için kullanılır 
+
+        function ornek() {
+            document.getElementById("baglanti").setAttribute("href","https://www.google.com.tr");
+        }
+
+
+    </script>
+</body>
+</html>

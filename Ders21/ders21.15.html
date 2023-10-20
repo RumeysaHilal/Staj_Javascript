@@ -1,0 +1,31 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body onresize="ornek()" >
+    <div id="sonuc"></div>
+    <div id="sonuc2"></div>
+
+    <details ontoggle = "ornek()">
+        <summary>
+            Burası açılır / kapanır alan
+        </summary>
+        <div> javascript</div>
+        <div> python</div>
+        <div> html</div>
+        <div> php</div>
+    </details>
+
+    <script type="text/javascript" language="javascript">
+        // ontoggle : belge içindeki html details elemanının içeriği açıldığında veya kapandığında belirtilen fonk çalışır
+
+        function ornek(){
+            alert("olay gerççekleşti");
+        }
+
+    </script>
+</body>
+</html>

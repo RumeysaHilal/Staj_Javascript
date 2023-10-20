@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+    <style type="text/css">
+        body{
+            cursor:url("boncuk.png"),auto;
+        }
+	</style>
+</head>
+
+<body>
+    
+    <div id="gezen_alan"><img src="logo.png" width="50" height="29" style="border: none;"></div>
+    
+    <script type="text/javascript" language="javascript">
+        
+        var alan = document.getElementById("gezen_alan");
+        alan.style.position = "absolute";
+
+        window.onmousemove = function(event){
+            alan.style.left = event.clientX + "px";
+            alan.style.top = event.clientY + "px";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <h3> İDO ve BUDO seferleri iptal edildi o seferlerin listesi</h3>
+    <button onclick="ornek()"> haberin devamını oku</button>
+    <br><br>
+    <div id="detay"></div>
+    <script type="text/javascript" language="javascript">
+        function ornek(){
+            var istek = new XMLHttpRequest();
+            istek.onreadystatechange = function(){
+                if ( this.readyState == 4 && this.status == 200){
+                    document.getElementById("detay").innerHTML = this.responseText;
+                }
+                else{
+                    document.getElementById("detay").innerHTML = "İstek veya yanıt anında hata oluştu."
+                }
+                
+            };
+            istek.open('GET',"baslangic.txt", true);
+            istek.send();
+        }
+    </script>
+    
+</body>
+</html>

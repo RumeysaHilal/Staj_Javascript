@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>BOM Eğitim</title>
+</head>
+
+<body>
+    <button onclick="bir()"> Pencere Aç </button>
+    <button onclick="iki()"> Boyutlandır </button>
+
+    <div id="sonuc"></div>
+    
+    <script type="text/javascript" language="javascript">
+        //resizeTo() : pencerenin mevcut genişlik ve yükseklik değerini belirtilen piksellere göre yeniden boyutlandırmak için kullanılır. 
+        // resizeBy fonksiyonunda ana pencere giriş alınarak artırma işlemi yapar
+        var pencere;
+
+        function bir(){
+            pencere = window.open("","Eğitim Seti","width = 250, height = 250");
+        }
+
+        function iki(){
+            pencere.resizeTo(100,100);
+        }
+   </script>
+    
+</body>
+</html>

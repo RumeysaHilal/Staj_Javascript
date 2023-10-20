@@ -1,0 +1,34 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .deneme{
+            text-decoration: none;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="ornek()"> ekle </button>
+    <br /><br />
+    <a id="baglanti" target="_blank" href="https://www.google.com.tr" class="deneme"> bağlantıya git </a>
+    <br />
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // removeAttribute() : belge içindeki herhangi bir html elemanının belirtilen özelliğini kaldırmak için kullanılır 
+
+        function ornek() {
+            document.getElementById("baglanti").removeAttribute("href");
+            document.getElementById("baglanti").removeAttribute("target");
+        }
+
+
+    </script>
+</body>
+</html>

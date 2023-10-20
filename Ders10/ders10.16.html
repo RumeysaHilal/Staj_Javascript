@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        
+        function bilgi(isim,soyad,yil) {
+            this.isimozellik = isim;
+            this.soyadozellik = soyad;
+            this.yilozellik = yil;
+        }
+
+        bilgi.prototype.islem = function(){
+            return this.isimozellik + " " + this.soyadozellik + " " + this.yilozellik;
+        }
+
+        var sonuc = new bilgi("java","script","2023");
+
+        var yazdir = sonuc.islem();
+        document.write(yazdir);
+
+        
+    </script>
+</body>
+</html>

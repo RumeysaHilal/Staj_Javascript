@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    
+</head>
+
+<body>
+    <div id="ornek" name="test" style="border: 3px dotted goldenrod" class="sinif"> javascript eğitim seti</div>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // getnamedıtem : belge içindeki eklenmiş özellik node referansını elde etmek için kullanılır 
+
+         var islem = document.getElementsByTagName("div")[0];
+         var sonuc = islem.attributes.getNamedItem("id").value;
+
+         alert(sonuc);
+
+    </script>
+</body>
+</html>

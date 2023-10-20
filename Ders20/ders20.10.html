@@ -1,0 +1,42 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .ornek2{
+            background-color: rgb(232, 25, 115);
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kimlik" class="ornek2" onmousedown="ornek()">javascript eğitim seti</div>    
+    <br>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // button : belge içerisinde mouse ile tıklama event ı gerçekleştiğinden farenin hanig tuşuna basıldığını geriye döndürür. 
+        /*
+        0 : sol tuş
+        1 : orta tuş ve tekerlek
+        2 : sağ tuş 
+        */
+        function ornek() {
+            var tus = event.button;
+            if (tus == 0 ){
+                document.getElementById("sonucalani").innerHTML = "sol tuş";
+            }
+            else if (tus == 1 ){
+                document.getElementById("sonucalani").innerHTML = "orta tuş ve tekerlek";
+            }
+            else if (tus == 2 ){
+                document.getElementById("sonucalani").innerHTML = "sag tuş";
+            }
+
+        }
+
+    </script>
+</body>
+</html>

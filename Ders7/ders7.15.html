@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // compile() : düzenli ifade içerisindeki desenin değiştirilmesini sağlar.
+        
+        var metin = "javascript eğitim seti php değil ";
+        var ifade = new RegExp( "javascript" , "i");
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+
+        ifade.compile("PHP","i");
+        var sonuc2 = metin.match(ifade);
+        document.write(sonuc2);
+
+
+
+
+        
+    </script>
+</body>
+</html>

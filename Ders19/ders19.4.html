@@ -1,0 +1,36 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .deneme{
+            padding: 10px;
+            border-left: 6px solid rgb(23, 234, 94) ;
+            border-top: 10px solid rgb(23, 231, 19) ;
+            text-decoration: none;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alan" class="deneme"> JAVASCRİPT EĞİTİM SETİ </div>
+    <br/><br/><br/>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // clientLeft : belge içindeki css ile atanmış sol kenarlık varsa onu elde etmek için kullanılır
+        // clientTop : belge içindeki css ile atanmış üst kenarlık varsa onu elde etmek için kullanılır
+
+        var sol_kenarlık = document.getElementById("alan").clientLeft;
+        var ust_kenarlık = document.getElementById("alan").clientTop;
+
+        document.getElementById("sonucalani").innerHTML = " sol kenarlık genişliği : " + sol_kenarlık + "px" + "</br> üst kenar genişliği : " + ust_kenarlık + "px" ;
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+<style>
+    .orneksinif{
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="ornek" name="deneme" style="font-weight: bold; font-size: 25px;" class="orneksinif" contenteditable="true"> eğitim seti</div>
+    <br /><br />
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // getAttribute() : özelliğe sahip elemanın alınmasını sağlar
+
+        var birinciDeger = document.getElementsByTagName("div")[0].getAttribute("id");
+        var ikinciDeger = document.getElementsByTagName("div")[0].getAttribute("class");
+        var ucuncuDeger = document.getElementsByTagName("div")[0].getAttribute("style");
+        var dortuncuDeger = document.getElementsByTagName("div")[0].getAttribute("contenteditable");
+        var besinciDeger = document.getElementsByTagName("div")[0].getAttribute("name");
+
+        document.getElementById("sonucalani").innerHTML ="birinci değer:"+ birinciDeger + "<br> ikinci değer: " + ikinciDeger + "<br> ucuncu değer:  " + ucuncuDeger + "<br> dördüncü değer: " + dortuncuDeger + "</br> beşinci değer " + besinciDeger;
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // $ : düzenli ifade ile kontrol değişken sonu arasında eşleşme arar. 
+        // karakter diziliminin en sonuna bakar karşılaştırma yapacağı
+
+        var metin = "dersimizin konusu  Javascript" ; 
+        var ifade = new RegExp("javascript$","i");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc);
+
+        
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // localeCompare() : üzerinde çalışılan değişkene parametrik olarak verilen diğer bir değişken içeriğini tarayıcı diline göre karşılaştırır ve sonucu döndürür.         
+        // -1 birinci ikinciden önceyse
+        // 0 birinci ikinciye eşitse
+        // 1 birinci ikinciden sonraysa
+          
+        var icerik1 = "abc";
+        var icerik2 = "abd";
+
+        document.write(icerik1 + "<br/>");
+        document.write(icerik2 + "<br/>");
+
+        var sonuc = icerik1.localeCompare(icerik2);
+        document.write(sonuc);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    
+</head>
+
+<body>
+    <div id="bir"> javascript </div>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript" language="javascript">
+        // nodeType : belge içindeki herhangi bir nodeun türünü elde etmek için kullanılır 
+        /*
+        1 elemnt_node
+        2 attribute_node
+        3 text_node
+        4 cdata_section_node
+        5 entity_reference_node
+        6 entity_node
+        7 processing_instruction_node
+        8 comment_node
+        9 document_node
+        10 document_type_node
+        11 document_fragment_node
+        12 notation_node
+        
+        */
+
+        var deger = document.getElementById("bir").nodeType;
+        if (deger==1){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması element_node ";
+        }
+        else if (deger==2){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması attribute_node ";
+        }
+        else if (deger==3){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması text_node ";
+        }
+        else if (deger==4){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması cdata_section_node ";
+        }
+        else if (deger==5){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması entity_reference_node ";
+        }
+        else if (deger==6){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması entity_node ";
+        }
+        else if (deger==7){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması processing_instruction_node ";
+        }
+        else if (deger==8){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması comment_node ";
+        }
+        else if (deger==9){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması document_node ";
+        }
+        else if (deger==10){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması document_type_node ";
+        }
+        else if (deger==11){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması document_fragment_node ";
+        }
+        else if (deger==12){
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması notation_node ";
+        }
+        else{
+            document.getElementById("sonuc").innerHTML = deger + " düğümün açıklaması undefined ";
+        }
+        
+
+    </script>
+</body>
+</html>

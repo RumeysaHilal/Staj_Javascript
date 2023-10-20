@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    
+</head>
+
+<body>
+    <div id="birinciid" name="birisim" style="border: 1px solid red; margin: 5px; padding: 5px;" class="sinif"> javascript eğitim seti</div>
+    <div id="sonucalani"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // specified : belge içerisindeki html elemanına herhangi bir özelliğin eklenip eklenmediği referansını boolean veri türünde elde etmek için kullanılır 
+
+        var islem = document.getElementsByTagName("div")[0];
+        var sonuc = islem.getAttributeNode("id").specified;
+        document.getElementById("sonucalani").innerHTML = sonuc;
+
+
+    </script>
+</body>
+</html>

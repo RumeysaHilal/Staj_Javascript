@@ -1,0 +1,22 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <input type="text" id = "metinalani" onkeypress="ornek()">
+    <div id="sonucalani"></div>
+    <div id="basimalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // keyCode : onkeypress , onkeydown , onkeyup eventı gerçekleştiğinde klavyeden basılan tuşun unicode kodlamasına dönüştürülerek oluşturduğu değeri geriye döndürür
+
+        function ornek(){
+            var basilantus = event.keyCode;
+            document.getElementById("sonucalani").innerHTML += basilantus;
+            }
+    </script>
+</body>
+</html>

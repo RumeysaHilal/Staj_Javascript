@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // match() :  verilen parametrelerde aranacak kelimeyi arar
+        // g : içeriğin tamamı üzerinde çalışmasını sağlar. düzenli ifade
+        // i : içeriğin büyük küçük harf olmasına bakmaz.
+        
+        var metin = "Javascript Egitim egitim Seti";
+        document.write(metin + "<br/>");
+
+        var islem  = metin.match(/java/i);
+        document.write(islem + "<br/>");
+
+        var islemiki  = metin.match(/egitim/gi);
+        document.write(islemiki + "<br/>");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \v : düzenli ifade dahilinde kontrol edilecek dizindeki değerin sadece dikey sekme karakteri ile eşleşmesi gerektiğini belritmek için kulllanılır.
+        // \u000B : 16 bir yazma şekli 
+
+        var metin = "javascript\veğitim \u000B seti";
+        var ifade = new RegExp("\\v","g");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

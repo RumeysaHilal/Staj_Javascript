@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    <style>
+        .hedefalani{
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <span draggable="true"></span> <br/><br/><br/>
+    <div id="hedef" class="hedefalani" ondragenter="ornek"></div>
+    
+    <script type="text/javascript" language="javascript">
+        // ondragenter 
+
+        function ornek(){
+            alert("sürüklenen nesne hedefe giriş yaptı");
+        }
+    </script>
+</body>
+</html>

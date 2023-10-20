@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // split verilen düzenli ifadeye göre değişken içeriğini parçalar
+
+        var metin = "Javascript Php Html Css Xml Python";
+        document.write(metin + "<br/>");
+
+        var ifade = new RegExp(" ","g");
+        var sonuc = metin.split(ifade);
+        document.write(sonuc + "<br/>");
+        document.write(sonuc[0] + "<br/>");
+        document.write(sonuc[1] + "<br/>");
+        document.write(sonuc[2] + "<br/>");
+        document.write(sonuc[3] + "<br/>");
+
+
+
+
+        
+    </script>
+</body>
+</html>

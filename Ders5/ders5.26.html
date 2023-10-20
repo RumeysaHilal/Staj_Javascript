@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // forEach() : fonksiyonu tek tek tüm elemanlarla çalıştırır.
+        // 1. parametre : her işlemde elde edilen dizi elemanı
+        // 2. parametre : her işlemde elde edilen dizi elemanının indisi
+        // 3. parametre : tekrarlama işlemi için dizinin atandığı değişkenin referansı
+        
+        function islem(eleman , sıra , degisken){
+            sonuc = sonuc + "çalıştı " + eleman + "<br/>";
+        }
+
+        var sonuc ="";
+        var sayilar = new Array (15,27,3,56,19,41,9,47,32,61);
+        document.write(sayilar + "<br/>");
+
+        sayilar.forEach(islem);
+        document.write(sonuc + "<br/>");
+        
+
+    </script>
+</body>
+</html>

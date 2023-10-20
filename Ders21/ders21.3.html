@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <input type="text" id = "metinalani" onkeydown="ornek()">
+    <div id="sonucalani"></div>
+    <div id="basimalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        //  location : belge içindeki onkeydown veya onkeyup evetnı gerçekleştiğinde ilgili tuşun klavyedeki konum bilgisini geriye döndürür
+        /*
+        0 :  standart tuşlar
+        1 : sol tuşlar 
+        2 : sağ tuşlar
+        3 : numpad tuşları  
+        */
+
+        function ornek(){
+            var basilantus = event.location;
+            if ( basilantus == 0 ){
+                document.getElementById("sonucalani").innerHTML = " Standart Tuşlara basıldı";
+            }
+            else if( basilantus == 1 ){
+                document.getElementById("sonucalani").innerHTML = " sol tuşlara basıldı";
+            }
+            else if( basilantus == 2){
+                document.getElementById("sonucalani").innerHTML = "sağ tuşlara basıldı";
+            }
+            else if( basilantus == 3){
+                document.getElementById("sonucalani").innerHTML = " numpad tuşlarına basıldı";
+            }
+        }
+    </script>
+</body>
+</html>

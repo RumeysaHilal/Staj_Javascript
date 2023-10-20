@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>  
+    <div class="bicimlendirme">Javascript</div>
+    <div class="bicimlendirme">Python</div>
+    <div class="bicimlendirme2">PHP</div>
+    <div class="bicimlendirme2">JQuery</div>
+    <div class="bicimlendirme">Xml</div>
+    <div class="bicimlendirme2">Html</div>
+    <p id="islemsonucu"></p>
+
+    <script type="text/javascript" language="javascript">
+        // getElementByClassName() : parametre değeri ile belge içindeki class sınıfına ait özellikleri geriye döndürür.
+
+        var sonuc = document.getElementsByClassName("bicimlendirme2");
+        for( var bas = 0; bas<sonuc.length ; bas++){
+            sonuc[bas].style.backgroundColor = "#FF8280";
+        }
+        
+        var sonuc2 = document.getElementsByClassName("bicimlendirme");
+        for( var bas = 0; bas<sonuc2.length ; bas++){
+            sonuc2[bas].style.backgroundColor = "#5797FF";
+        }
+        
+        
+        //document.getElementById("islemsonucu").innerHTML = sonuc;
+    </script>
+</body>
+</html>

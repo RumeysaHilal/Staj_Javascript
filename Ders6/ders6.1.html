@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // every() : parametre degeri false döndürene kadar dizi elemanları üzerinde gezinilmesini sağlar.
+        // 1 parametre: her işlemde elde edilen dizi elemanı
+        // 2. parametre : her işlemde elde edilen elemanın indiz değeri
+        // 3. parametre : her tekrarlamada işlemin yapıldığı diziyi tutan değişkenin referansı
+
+        function demo(eleman, indis, degisken){
+            islemsonucu = eleman;
+            return eleman % 5 === 0;
+        }
+
+        islemsonucu = "";
+        var rakamlar = new Array (5, 10, 20, 50, 30, 140, 342, 700, 400 );
+        document.write(rakamlar + "<br/>");
+
+        rakamlar.every(demo);
+        document.write(islemsonucu);
+
+    </script>
+</body>
+</html>

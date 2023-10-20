@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>  
+
+    javascript eğitim dili bir  <span name ="script">java</span> , dünyada ve Türkiyede kullanılan bir <span name="script">python</span>. <br/>
+    script sayısı : <span id="scriptsayisi"></span>
+
+    <script type="text/javascript" language="javascript">
+        // getElementByName() : parametre verilen değer doğrultusunda, belge içerisinde belirtilen name özelliğine sahip tüm elemanların referansını elde etmek için kullanılır. birden fazla ise her bir eleman döngü ile elde edilebilir
+
+        var bilgi = document.getElementsByName("script");
+        var sonuc = [];
+        for (var bas=0; bas<bilgi.length ; bas++){
+            var islem = bilgi[bas].innerHTML;
+            sonuc[bas]=islem;
+        }
+        document.getElementById("scriptsayisi").innerHTML = sonuc;
+        
+    </script>
+</body>
+</html>

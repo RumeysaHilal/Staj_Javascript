@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Eğitim</title>
+    
+</head>
+
+<body>
+    <div id="birinciid" name="birisim" style="background-color: crimson;" class="sinif"> eğitim seti</div>
+    <div id="sonucalani"></div>
+    <script type="text/javascript" language="javascript">
+        // name : özellik adı referansını amak için kullanılır. 
+        var islem = document.getElementById("birinciid").attributes;
+        var adet = islem.length;
+        var dizi = [];
+        for (var i = 0; i <adet; i++){
+            var sonuc = document.getElementById("birinciid").attributes[i].name;
+            dizi[i] = sonuc;
+        }
+        document.getElementById("sonucalani").innerHTML = "özellikadi: " + dizi;
+        var sonuc
+    </script>
+</body>
+</html>

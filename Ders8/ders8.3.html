@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  () : grup tanımlmak için kullanılır.
+
+        var metin = "html ve javascript dilinin dosya uzantısı js jss jjsss js şeklindedir.";
+        var ifade = new RegExp("(html | javascript)" , "gi");
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+
+
+        var ifade2 = new RegExp("(j)(a)(v)(a)(s)(c)(r)(i)(p)(t)" );
+        var sonuc2 = metin.match(ifade2);
+
+        document.write(sonuc2);
+
+
+        
+    </script>
+</body>
+</html>

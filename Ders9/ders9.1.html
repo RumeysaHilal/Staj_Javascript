@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  getUTCMonth() :  evrensel zaman dilimine ait yıl bilgisini rakamsal olarak geriye döndürür.
+        // getUTCDate(): ayın gün bilgisini 1 - 31 olarak geriye döndürür
+        // getUTCDay(): haftanın gün bilgisini 0-6 olarak geriye döndürür 0 pazar günüdür
+        // getUTCHours(): evrensel saat bilgisini 0 - 23 arasında olack şekilde geriye döndürür. 
+
+
+        var zaman = new Date();
+        var ay = zaman.getUTCMonth();
+        var gun = zaman.getUTCDate();
+        var saat = zaman.getUTCHours(); 
+
+        document.write(ay+1 + "<br/>" + gun + "<br/>" + saat);
+  
+    </script>
+</body>
+</html>

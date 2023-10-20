@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+    <img id="bir" src="resim.png"/>
+    <div id="sonuc"></div>
+    <div id="sonuc2"></div>
+
+<body>
+    <script type="text/javascript" language="javascript">
+       // images : belge içerisindeki img tagına sahip tüm elemanların referansını elde etmek için kullanılır.
+       // tam link kısmını verir
+       var islem = document.images.item(0).src;
+       document.getElementById("sonuc").innerHTML = "item src : " + islem;
+       
+       //namedItem id değerleri verilen bulur
+       var islem2 = document.images.namedItem("bir").src;
+       document.getElementById("sonuc2").innerHTML = "nameditem : " + islem2;
+
+    </script>
+</body>
+</html>

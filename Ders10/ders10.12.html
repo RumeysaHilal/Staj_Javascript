@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        
+        function bilgi(isimdeger, saddeger){
+            this.isim = isimdeger;
+            this.soyad = saddeger;
+            this.islem = function(deger){
+                this.isim = deger;
+            }
+        }
+
+        var sonuc = new bilgi("java", "script");
+        var gelenisim= sonuc.isim;
+        var gelensoyad = sonuc.soyad;
+
+        sonuc.islem("js");
+
+        document.write(sonuc.isim + "<br/>");
+        document.write(sonuc.soyad + "<br/>");
+        
+    </script>
+</body>
+</html>

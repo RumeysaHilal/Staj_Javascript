@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // ?! : kontrol edilcek değişken içeriği karakter dizilimi içerisinde referans değer ile takip edilmeyen değerler ile düzenli ifadenin eşleşebilecek değerleri aramak için kullanılır. 
+
+        var metin = "javascript dünya üzerinde ve türkiye dee en yaygın olarak kullanılmakta olan script dilidir.";
+        var ifade = new RegExp("script(?! dünya)");
+        var sonuc = metin.search(ifade);
+        document.write(sonuc);
+
+
+        
+
+
+        
+    </script>
+</body>
+</html>

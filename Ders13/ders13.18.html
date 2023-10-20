@@ -1,0 +1,32 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head id="ornekid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+
+<body>
+    <div id="sonucalani"></div>
+
+    <script type="text/javascript" language="javascript">
+        // addEventListener() : belgeye event işaretleyicisi eklemek için kullanılır. işaretlenen yerde olaylar gerçekleşmesi için fonksiyonlar ttanımlanır.
+        
+        document.addEventListener("click",ornekbir);
+        function ornekbir(){
+            document.getElementById("sonucalani").innerHTML += "tıklandı" + "<br />";
+        }
+
+        document.addEventListener("mouseover", ornekiki);
+        function ornekiki(){
+            document.getElementById("sonucalani").innerHTML += "mouse over oldu" + "<br />";
+        }
+
+        document.addEventListener("mouseout", uc);
+        function uc(){
+            document.getElementById("sonucalani").innerHTML += "mouse out oldu"+ "<br />";
+        }
+
+    </script>
+</body>
+</html>

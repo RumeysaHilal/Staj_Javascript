@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \xXX : hexadecimal sayı sistem tabanında ascii karşılığı olan karakteriyle eşleşmesi gerektiğini belirtmek için kullanılır.
+        // değer aralığı = /x00 -\xFF
+        // 0x6a 0x61 0x76 0x61
+
+        var metin = "javascript";
+        var ifade = new RegExp("\\x6a");
+        var sonuc = ifade.test(metin);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

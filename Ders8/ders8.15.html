@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //  \s :  kontrol edilecek değişken içeriği karakter diziliminde bulunan değerin sdece boşluk karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+
+        var metin = "?! 85' +e%git&/(Vka $#8 9 _63 £)";
+        var ifade = new RegExp("\\s","g");
+        var sonuc = metin.match(ifade);
+
+        document.write(sonuc + "<br/>");
+  
+    </script>
+</body>
+</html>

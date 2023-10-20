@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        var bilgiler = {
+            isim : "hilal",
+            soyisim : "sevinç",
+            uyari: function(){
+                alert("ben nesne içi koduyum");
+            }
+        }
+
+        var isimdeger = bilgiler.isim;
+        var soyisimdeger = bilgiler.soyisim;
+
+        bilgiler.uyari();
+
+        document.write(isimdeger + "<br/>" + soyisimdeger);
+
+    </script>
+</body>
+</html>
